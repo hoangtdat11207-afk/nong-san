@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshFarm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background-color: white;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            flex: 1;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-thumbnails {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        .product-thumbnails img {
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .product-thumbnails img:hover {
+            border-color: #4CAF50;
+        }
+        .product-info {
+            flex: 1;
+            margin-left: 30px;
+        }
+        .product-info h2 {
+            color: #2E7D32;
+        }
+        .price {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .status {
+            margin-top: 5px;
+            color: #333;
+        }
+        .desc {
+            margin: 15px 0;
+            color: #555;
+            line-height: 1.5;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45A049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FreshFarm</h1>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="product-image">
+        <img src="https://i.imgur.com/1QfY9tp.jpg" alt="Rau Củ Sạch">
+        <div class="product-thumbnails">
+            <img src="https://i.imgur.com/5Yk9yqz.jpg" alt="">
+            <img src="https://i.imgur.com/3yV6gON.jpg" alt="">
+            <img src="https://i.imgur.com/5dmT2eM.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h2>Rau Củ Sạch</h2>
+        <p class="price">Giá: 50,000 VND</p>
+        <p class="status">Trạng thái: Còn hàng</p>
+        <p class="desc">
+            Rau củ sạch được trồng theo phương pháp hữu cơ, không sử dụng hóa chất, đảm bảo tươi ngon và an toàn cho sức khỏe.
+            Được cung cấp trực tiếp từ nông trại đến bàn ăn của bạn.
+        </p>
+        <button>Thêm vào giỏ</button>
+    </div>
+</div>
+
+<footer>
+    © 2024 FreshFarm. Mang đến nông sản sạch mỗi ngày.
+</footer>
+
+</body>
+</html>
